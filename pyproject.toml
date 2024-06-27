@@ -1,25 +1,17 @@
 [project]
 name = "undina-llm"
 version = "0.1.0"
-description = "Add your description here"
+description = "Extracting contraindications and drug interactions from structured product labels using GPT"
 authors = [
     { name = "zietzm", email = "michael.zietz@gmail.com" }
 ]
 dependencies = [
-    "numpy>=2.0.0",
-    "jupyterlab>=4.2.2",
-    "pandas>=2.2.2",
-    "polars>=0.20.31",
-    "matplotlib>=3.9.0",
     "openai>=1.35.5",
-    "pyarrow>=16.1.0",
     "sqlmodel>=0.0.19",
+    "more-itertools>=10.3.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"
-
-[project.scripts]
-"undina-llm" = "undina_llm:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -27,7 +19,15 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "ipywidgets>=8.1.3",
+    "jupyterlab>=4.2.3",
+    "matplotlib>=3.9.0",
+    "polars>=0.20.31",
+    "pandas>=2.2.2",
+    "numpy>=2.0.0",
+    "pyarrow>=16.1.0",
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
