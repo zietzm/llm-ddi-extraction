@@ -1,0 +1,36 @@
+[project]
+name = "undina-llm"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "zietzm", email = "michael.zietz@gmail.com" }
+]
+dependencies = [
+    "numpy>=2.0.0",
+    "jupyterlab>=4.2.2",
+    "pandas>=2.2.2",
+    "polars>=0.20.31",
+    "matplotlib>=3.9.0",
+    "openai>=1.35.5",
+    "pyarrow>=16.1.0",
+    "sqlmodel>=0.0.19",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[project.scripts]
+"undina-llm" = "undina_llm:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/undina_llm"]
