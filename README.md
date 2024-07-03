@@ -1,3 +1,3 @@
-# undina-llm
+# Drug-drug interactions extraction
 
-Describe your project here.
+For questions, contact Michael Zietz (@zietzm).
