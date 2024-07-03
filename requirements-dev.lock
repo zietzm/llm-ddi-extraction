@@ -62,10 +62,17 @@ executing==2.0.1
     # via stack-data
 fastjsonschema==2.20.0
     # via nbformat
+filelock==3.15.4
+    # via huggingface-hub
+    # via torch
+    # via transformers
 fonttools==4.53.0
     # via matplotlib
 fqdn==1.5.1
     # via jsonschema
+fsspec==2024.6.1
+    # via huggingface-hub
+    # via torch
 greenlet==3.0.3
     # via sqlalchemy
 h11==0.14.0
@@ -75,6 +82,10 @@ httpcore==1.0.5
 httpx==0.27.0
     # via jupyterlab
     # via openai
+huggingface-hub==0.23.4
+    # via sentence-transformers
+    # via tokenizers
+    # via transformers
 idna==3.7
     # via anyio
     # via httpx
@@ -95,6 +106,9 @@ jinja2==3.1.4
     # via jupyterlab
     # via jupyterlab-server
     # via nbconvert
+    # via torch
+joblib==1.4.2
+    # via scikit-learn
 json5==0.9.25
     # via jupyterlab-server
 jsonpointer==3.0.0
@@ -148,6 +162,8 @@ mistune==3.0.2
     # via nbconvert
 more-itertools==10.3.0
     # via undina-llm
+mpmath==1.3.0
+    # via sympy
 nbclient==0.10.0
     # via nbconvert
 nbconvert==7.16.4
@@ -158,24 +174,33 @@ nbformat==5.10.4
     # via nbconvert
 nest-asyncio==1.6.0
     # via ipykernel
+networkx==3.3
+    # via torch
 notebook-shim==0.2.4
     # via jupyterlab
-numpy==2.0.0
+numpy==1.26.4
     # via contourpy
     # via matplotlib
     # via pandas
     # via pyarrow
+    # via scikit-learn
+    # via scipy
+    # via sentence-transformers
+    # via transformers
+    # via undina-llm
 openai==1.35.5
     # via undina-llm
 overrides==7.7.0
     # via jupyter-server
 packaging==24.1
+    # via huggingface-hub
     # via ipykernel
     # via jupyter-server
     # via jupyterlab
     # via jupyterlab-server
     # via matplotlib
     # via nbconvert
+    # via transformers
 pandas==2.2.2
 pandocfilters==1.5.1
     # via nbconvert
@@ -185,6 +210,7 @@ pexpect==4.9.0
     # via ipython
 pillow==10.3.0
     # via matplotlib
+    # via sentence-transformers
 platformdirs==4.2.2
     # via jupyter-core
 polars==0.20.31
@@ -222,7 +248,9 @@ python-json-logger==2.0.7
 pytz==2024.1
     # via pandas
 pyyaml==6.0.1
+    # via huggingface-hub
     # via jupyter-events
+    # via transformers
 pyzmq==26.0.3
     # via ipykernel
     # via jupyter-client
@@ -231,8 +259,12 @@ referencing==0.35.1
     # via jsonschema
     # via jsonschema-specifications
     # via jupyter-events
+regex==2024.5.15
+    # via transformers
 requests==2.32.3
+    # via huggingface-hub
     # via jupyterlab-server
+    # via transformers
 rfc3339-validator==0.1.4
     # via jsonschema
     # via jupyter-events
@@ -242,8 +274,16 @@ rfc3986-validator==0.1.1
 rpds-py==0.18.1
     # via jsonschema
     # via referencing
+safetensors==0.4.3
+    # via transformers
+scikit-learn==1.5.1
+    # via sentence-transformers
+scipy==1.14.0
+    # via scikit-learn
+    # via sentence-transformers
 send2trash==1.8.3
     # via jupyter-server
+sentence-transformers==3.0.1
 setuptools==70.1.1
     # via jupyterlab
 six==1.16.0
@@ -263,11 +303,19 @@ sqlmodel==0.0.19
     # via undina-llm
 stack-data==0.6.3
     # via ipython
+sympy==1.12.1
+    # via torch
 terminado==0.18.1
     # via jupyter-server
     # via jupyter-server-terminals
+threadpoolctl==3.5.0
+    # via scikit-learn
 tinycss2==1.3.0
     # via nbconvert
+tokenizers==0.19.1
+    # via transformers
+torch==2.2.2
+    # via sentence-transformers
 tornado==6.4.1
     # via ipykernel
     # via jupyter-client
@@ -275,7 +323,10 @@ tornado==6.4.1
     # via jupyterlab
     # via terminado
 tqdm==4.66.4
+    # via huggingface-hub
     # via openai
+    # via sentence-transformers
+    # via transformers
 traitlets==5.14.3
     # via comm
     # via ipykernel
@@ -290,13 +341,17 @@ traitlets==5.14.3
     # via nbclient
     # via nbconvert
     # via nbformat
+transformers==4.41.2
+    # via sentence-transformers
 types-python-dateutil==2.9.0.20240316
     # via arrow
 typing-extensions==4.12.2
+    # via huggingface-hub
     # via openai
     # via pydantic
     # via pydantic-core
     # via sqlalchemy
+    # via torch
 tzdata==2024.1
     # via pandas
 uri-template==1.3.0

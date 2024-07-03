@@ -11,3 +11,4 @@ wheels/
 data/latest_labels_ingredients
 nb/.ipynb_checkpoints
 config.json
+.DS_Store

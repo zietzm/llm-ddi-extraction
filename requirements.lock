@@ -31,6 +31,8 @@ idna==3.7
     # via httpx
 more-itertools==10.3.0
     # via undina-llm
+numpy==1.26.4
+    # via undina-llm
 openai==1.35.5
     # via undina-llm
 pydantic==2.7.4
