@@ -55,3 +55,5 @@ typing-extensions==4.12.2
     # via pydantic
     # via pydantic-core
     # via sqlalchemy
+zstandard==0.22.0
+    # via undina-llm

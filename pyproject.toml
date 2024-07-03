@@ -10,6 +10,7 @@ dependencies = [
     "sqlmodel>=0.0.19",
     "more-itertools>=10.3.0",
     "numpy<2",
+    "zstandard>=0.22.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.12"

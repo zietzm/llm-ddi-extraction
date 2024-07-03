@@ -370,3 +370,5 @@ websocket-client==1.8.0
 widgetsnbextension==4.0.11
     # via ipywidgets
 xlsxwriter==3.2.0
+zstandard==0.22.0
+    # via undina-llm
